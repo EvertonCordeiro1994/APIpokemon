@@ -1,7 +1,6 @@
 import { Card, CardBody} from 'reactstrap';
 import Info from './components/info.jsx';
 import './style/style.css'
-import './style/App.css'
 
 export default function App() {
 

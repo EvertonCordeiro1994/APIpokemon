@@ -28,15 +28,15 @@ export default function PokemonSearch(){
         {pokemonData && (
           <div>
             <img src={pokemonData.sprites.front_default}/>
-            <h2>{pokemonData.name}</h2>
+            <h1>{pokemonData.name}</h1>
             <h6>ID: {pokemonData.id}</h6>
-            <h6>Types:</h6>
+            <h2>Types</h2>
             <ul>
               {pokemonData.types.map((typeInfo) => (
                 <li key={typeInfo.slot}>{typeInfo.type.name}</li>
               ))}
             </ul>
-            <h6>Moves:</h6>
+            <h2>Moves</h2>
             <ul>
               {pokemonData.moves.map((moveInfo) => (
                 <li key={moveInfo.slot}>{moveInfo.move.name}</li>
