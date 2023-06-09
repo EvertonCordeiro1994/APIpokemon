@@ -32,13 +32,13 @@ body {
 
 .m-per{
     margin-top: -1rem;
-    margin-bottom: -2rem;
+    margin-bottom: 3rem;
 }
 
 .input-group{
     display: flex;
     width: 15rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 .input{
