@@ -17,6 +17,7 @@ body {
 
 .cartao {
     width: 23.4rem;
+    min-height: 13rem;
     border-radius: 50px;
     background: #e70606;
     

@@ -13,7 +13,7 @@ export default function PokemonSearch() {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
+            const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`)
             setPokemonData(response.data)
         } catch (error) {
             console.error(error)
@@ -62,6 +62,7 @@ export default function PokemonSearch() {
                 <Button onClick={handleButtonClick} >Search</Button>
 
             </InputGroup>
+            <div style={{ height: '2rem'}}></div>
         </>
     )
 }
