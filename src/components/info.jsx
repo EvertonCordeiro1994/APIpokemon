@@ -50,7 +50,7 @@ export default function PokemonSearch() {
                             <li key={typeInfo.slot}>{typeInfo.type.name}</li>
                         ))}
                     </ul>
-                    <h2>Moves</h2>
+                    <img src="https://fontmeme.com/permalink/230609/9d983d40b03df7963532f868cc0b8ca0.png" alt="pokemon-font" border="0"/>
                     <ul>
                         {pokemonData.moves.map((moveInfo) => (
                             <li key={moveInfo.slot}>{moveInfo.move.name}</li>
