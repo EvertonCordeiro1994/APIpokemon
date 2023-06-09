@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import { InputGroup, Button, Input, } from 'reactstrap'
+import { Icon } from '@iconify/react';
 import axios from 'axios'
 
 export default function PokemonSearch() {
@@ -39,11 +40,11 @@ export default function PokemonSearch() {
     return (
         <>
             {pokemonData && (
-                <div ref={pageTopRef}>
-                    <img style={{ width: '350' }} id='foto' src={pokemonData.sprites.front_default} />
+                <div className='m-per' ref={pageTopRef}>
+                    <img  id='foto' src={pokemonData.sprites.front_default} style={{width: '150px', height: '150px' }} />
                     <h1>{pokemonData.name}</h1>
-                    <h6>ID: {pokemonData.id}</h6>
-                    <h2>Types</h2>
+                    <h3>ID: {pokemonData.id}</h3>
+                    <img src="https://fontmeme.com/permalink/230609/aec8eed3816d2a0f04764304669b2424.png" alt="pokemon-font" border="0"/>
                     <ul>
                         {pokemonData.types.map((typeInfo) => (
                             <li key={typeInfo.slot}>{typeInfo.type.name}</li>
@@ -58,8 +59,10 @@ export default function PokemonSearch() {
                 </div>
             )}
             <InputGroup>
-                <Input type="text" value={searchTerm} onChange={handleInputChange} onKeyPress={handleKeyPress} />
-                <Button variant="outline-primary" onClick={handleButtonClick} >Search</Button>
+                <Input className='input' type="text" value={searchTerm} onChange={handleInputChange} onKeyPress={handleKeyPress} />
+                <Button className='btn' onClick={handleButtonClick} >
+                    <Icon className='icn' icon="fluent:search-12-filled" />
+                </Button>
 
             </InputGroup>
             <div style={{ height: '2rem' }}></div>

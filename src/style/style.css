@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 :root {
     background-color: #ffffff;
 
@@ -21,4 +28,52 @@ body {
     border-radius: 50px;
     background: #e70606;
     
+}
+
+.m-per{
+    margin-top: -3rem;
+    margin-bottom: -2rem;
+}
+
+.input-group{
+    display: flex;
+    width: 15rem;
+    margin-top: 2rem;
+}
+
+.input{
+    background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px 0px 0px 30px;
+  width: 12em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn{
+    
+    border: none;
+    background-color: #f4f2f2;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.icn{
+    font-size: 2.15rem;
+    padding: 2px;
+    color: #64646481;
+
+}
+
+ul{
+    list-style: none;
 }

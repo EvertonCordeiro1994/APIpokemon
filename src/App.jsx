@@ -1,4 +1,4 @@
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
+import { Card, CardBody, } from 'reactstrap';
 import Info from './components/info.jsx';
 import './style/style.css'
 
