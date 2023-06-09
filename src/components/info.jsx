@@ -59,10 +59,10 @@ export default function PokemonSearch() {
             )}
             <InputGroup>
                 <Input type="text" value={searchTerm} onChange={handleInputChange} onKeyPress={handleKeyPress} />
-                <Button onClick={handleButtonClick} >Search</Button>
+                <Button variant="outline-primary" onClick={handleButtonClick} >Search</Button>
 
             </InputGroup>
-            <div style={{ height: '2rem'}}></div>
+            <div style={{ height: '2rem' }}></div>
         </>
     )
 }
