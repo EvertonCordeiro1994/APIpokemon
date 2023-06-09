@@ -4,30 +4,20 @@
 }
 
 body {
-    margin: 0;
     display: flex;
     place-items: center;
-    min-width: 320px;
     min-height: 100vh;
 }
 
 #root {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
     text-align: center;
 }
 
-.card {
-    padding: 2em;
-}
-
-#cartao {
+.cartao {
+    width: 23.4rem;
     border-radius: 50px;
     background: #e70606;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-}
-
-.logo{
-    width: 90%;
+    
 }
